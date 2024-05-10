@@ -10,13 +10,14 @@ db.yugioh-card.com와 다른 여러 사이트들을 크롤링하여 수집했습
 ``` python
 [
   {
-    "cid": "number",    # 공식 데이터베이스 번호
-    "ja": "text",       # 일문 카드명
-    "ja-kana": "text"   # 일문 카드명 가나 표기
-    "ko": "text",       # 국문 카드명
-    "en": "text",       # 영문 카드명
+    "cid": "number",        # 공식 데이터베이스 번호
+    "ja": "text",           # 일문 카드명
+    "ja-kana": "text"       # 일문 카드명 가나 표기
+    "ja-ruby": "html-text"  # 일문 카드명 + 후리가나 표기
+    "ko": "text",           # 국문 카드명
+    "en": "text",           # 영문 카드명
     "frameType": "normal | effect | ... | trap | link | xyz_pendulum"  # 카드 유형
-    "id": "number"      # 카드 고유 식별 번호(좌측 하단)
+    "id": "number"          # 카드 고유 식별 번호(passcode)
   },
   .
   .
